@@ -58,6 +58,7 @@ jobs:
   - template: common\checkout.yml
   - template: common\build.yml
   - template: common\symbols.yml
+  - template: common\rospkg2cgmanifest.yml
   - template: ..\package-build\package-build.yml
 - job: TestInstall
   dependsOn: Build
