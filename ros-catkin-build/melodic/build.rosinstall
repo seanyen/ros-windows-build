@@ -10,3 +10,7 @@
     local-name: msft_ros_pkgs
     uri: https://github.com/ms-iot/msft_ros_pkgs
     version: master
+- git:
+    local-name: catkin
+    uri: https://github.com/seanyen/catkin
+    version: permissive_fix
