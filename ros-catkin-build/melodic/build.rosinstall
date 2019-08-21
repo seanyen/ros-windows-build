@@ -10,3 +10,7 @@
     local-name: msft_ros_pkgs
     uri: https://github.com/ms-iot/msft_ros_pkgs
     version: master
+- git:
+    local-name: moveit
+    uri: https://github.com/ms-iot/moveit
+    version: windows_fix_melodic
