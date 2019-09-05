@@ -52,7 +52,7 @@ jobs:
     ROS_SHARE_DIR: 'c:\opt\ros\melodic\x64\share'
     ROS_ETC_DIR: 'c:\opt\ros\melodic\x64\etc\ros'
     ROSDISTRO_INDEX_URL: 'https://raw.githubusercontent.com/ms-iot/rosdistro-db/init_windows/index.yaml'
-    ROSWIN_ROSDEP_LIST_URI: 'https://raw.githubusercontent.com/ms-iot/rosdistro-db/init_windows/rosdep/sources.list.d/10-ms-iot.list'
+    ROSWIN_ROSDEP_LIST_URI: 'https://raw.githubusercontent.com/seanyen/rosdistro-db/cmake_update/rosdep/sources.list.d/10-ms-iot.list'
     ROSWIN_VSTOOL: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat'
     BUILD_TOOL_PACKAGE: 'ros-catkin-tools'
     BUILD_TOOL_PACKAGE_VERSION: '0.0.1.1903221831'
