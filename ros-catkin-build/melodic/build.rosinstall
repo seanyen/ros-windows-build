@@ -18,3 +18,7 @@
     local-name: imu_tools
     uri: https://github.com/ccny-ros-pkg/imu_tools
     version: melodic
+- git:
+    local-name: catkin
+    uri: https://github.com/seanyen/catkin.git
+    version: nogdi_fix
