@@ -40,7 +40,7 @@ jobs:
         skipComponentGovernanceDetection: false
       melodic-moveit:
         ROSWIN_METAPACKAGE: 'moveit'
-        ROSWIN_ADDITIONAL_PACKAGE: 'msft_ros_pkgs moveit_resources moveit_visual_tools perception desktop ros_control industrial_core descartes'
+        ROSWIN_ADDITIONAL_PACKAGE: 'msft_ros_pkgs moveit_resources moveit_visual_tools perception desktop ros_control industrial_core descartes moveit_tutorials'
       melodic-cartographer_ros:
         ROSWIN_METAPACKAGE: 'cartographer_ros'
         ROSWIN_ADDITIONAL_PACKAGE: 'msft_ros_pkgs cartographer_rviz'
