@@ -36,10 +36,6 @@
     uri: https://github.com/ms-iot/moveit.git
     version: windows_fix_melodic
 - git:
-    local-name: navigation
-    uri: https://github.com/ms-iot/navigation.git
-    version: init_windows
-- git:
     local-name: pluginlib
     uri: https://github.com/ms-iot/pluginlib.git
     version: init_windows
@@ -85,10 +81,6 @@
     local-name: eigenpy
     uri: https://github.com/stack-of-tasks/eigenpy.git
     version: v1.6.6
-- git:
-    local-name: ros_control
-    uri: https://github.com/ros-controls/ros_control.git
-    version: 4179515f2b5dc6b27d36c8788aa7a94813ebbd4a
 
 # additional packages not yet managed in rosdistro
 - git:
@@ -99,7 +91,6 @@
     local-name: cartographer_ros
     uri: https://github.com/googlecartographer/cartographer_ros.git
     version: master
-
 - git:
     local-name: cartographer
     uri: https://github.com/googlecartographer/cartographer.git
