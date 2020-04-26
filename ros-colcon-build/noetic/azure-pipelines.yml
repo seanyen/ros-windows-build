@@ -24,7 +24,7 @@ jobs:
   strategy:
     matrix:
       noetic-ros_tutorials:
-        ROSWIN_METAPACKAGE: 'ros_tutorials'
+        ROSWIN_METAPACKAGE: 'rviz'
   steps:
   - template: ..\..\common\agent-clean.yml
   - template: ..\common\checkout.yml
