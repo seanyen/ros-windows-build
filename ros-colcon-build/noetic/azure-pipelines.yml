@@ -24,8 +24,8 @@ jobs:
     ROSWIN_CMAKE_INSTALL_PREFIX: 'c:/opt/ros/noetic/x64'
   strategy:
     matrix:
-      noetic-ros_base:
-        ROSWIN_METAPACKAGE: 'ros_base'
+      noetic-desktop:
+        ROSWIN_METAPACKAGE: 'desktop'
   steps:
   - template: ..\..\common\agent-clean.yml
   - template: ..\common\checkout.yml
@@ -35,9 +35,9 @@ jobs:
   dependsOn: Build
   strategy:
     matrix:
-      noetic-ros_base:
+      noetic-desktop:
         ROS_DISTRO: 'noetic'
-        ROSWIN_METAPACKAGE: 'ros_base'
+        ROSWIN_METAPACKAGE: 'desktop'
   timeoutInMinutes: 300
   pool:
     vmImage: 'windows-2019'
