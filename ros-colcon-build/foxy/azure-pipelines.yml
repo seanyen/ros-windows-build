@@ -24,8 +24,8 @@ jobs:
     VCPKG_ROOT: 'c:\opt\vcpkg'
   strategy:
     matrix:
-      foxy-ALL:
-        ROSWIN_PACKAGE_SKIP: 'rttest tlsf tlsf_cpp pendulum_control ros_workspace librealsense2'
+      foxy-desktop:
+        ROSWIN_METAPACKAGE: 'desktop'
   steps:
   - template: ..\..\common\agent-clean.yml
   - template: ..\common\checkout.yml
@@ -36,9 +36,9 @@ jobs:
   dependsOn: Build
   strategy:
     matrix:
-      foxy-ALL:
+      foxy-desktop:
         ROS_DISTRO: 'foxy'
-        ROSWIN_METAPACKAGE: 'ALL'
+        ROSWIN_METAPACKAGE: 'desktop'
   timeoutInMinutes: 300
   pool:
     vmImage: 'windows-2019'
