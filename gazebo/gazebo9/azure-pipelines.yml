@@ -22,9 +22,8 @@ jobs:
       git clone https://github.com/ignitionrobotics/ign-cmake -b ign-cmake0
       git clone https://github.com/ignitionrobotics/ign-math -b ign-math4
       git clone https://github.com/ignitionrobotics/ign-msgs -b ign-msgs1
-      git clone https://github.com/ignitionrobotics/ign-fuel-tools -b ign-fuel-tools1
+      git clone https://github.com/ignitionrobotics/ign-tools -b ign-tools0
       git clone https://github.com/ignitionrobotics/ign-transport -b ign-transport4
-      git clone https://github.com/ignitionrobotics/ign-common -b ign-common1_colcon
       git clone https://github.com/osrf/sdformat -b sdf6
       git clone https://github.com/ms-iot/gazebo -b windows/gazebo9_9.13.1
     displayName: Get sources
@@ -38,12 +37,8 @@ jobs:
     displayName: ign-math
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
-      call "build.bat" ign-common
-    displayName: ign-common
-    workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
-  - script: |
-      call "build.bat" ign-fuel-tools
-    displayName: ign-fuel-tools
+      call "build.bat" ign-tools
+    displayName: ign-tools
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
       call "build.bat" ign-msgs
