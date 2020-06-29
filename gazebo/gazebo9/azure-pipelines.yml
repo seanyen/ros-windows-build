@@ -26,7 +26,7 @@ jobs:
       git clone https://github.com/ignitionrobotics/ign-transport -b ign-transport4
       git clone https://github.com/ignitionrobotics/ign-common -b ign-common1_colcon
       git clone https://github.com/osrf/sdformat -b sdf6
-      git clone https://bitbucket.org/ms-iot/gazebo -b windows/gazebo9_9.13.1
+      git clone https://github.com/ms-iot/gazebo -b windows/gazebo9_9.13.1
     displayName: Get sources
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
