@@ -42,6 +42,7 @@ jobs:
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
       call "build.bat" libzip
+      del /f C:\opt\rosdeps\x64\lib\pkgconfig\libzip.pc
     displayName: libzip
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
