@@ -18,6 +18,7 @@ cmake %~1 ^
     -DBUILD_TESTING:BOOL=False ^
     -DCMAKE_VERBOSE_MAKEFILE=ON ^
     -DCMAKE_PROGRAM_PATH=%GAZEBO_INSTALL_PREFIX%\tools\protobuf ^
+    -DCURL_NO_CURL_CMAKE=ON ^
     --debug-output ^
     -G "Ninja" ..
 ninja install
