@@ -19,13 +19,14 @@ jobs:
       choco upgrade pkg-config boost freeimage protobuf qt5-sdk dlfcn-win32 libcurl ogre zeromq cppzmq tbb qwt
     displayName: Install system dependencies
   - script: |
-      git clone https://github.com/ignitionrobotics/ign-cmake -b ign-cmake0
-      git clone https://github.com/ignitionrobotics/ign-math -b ign-math4
-      git clone https://github.com/ignitionrobotics/ign-msgs -b ign-msgs1
-      git clone https://github.com/ignitionrobotics/ign-tools -b ign-tools0
-      git clone https://github.com/ignitionrobotics/ign-transport -b ign-transport4
-      git clone https://github.com/osrf/sdformat -b sdf6
-      git clone https://github.com/ms-iot/gazebo -b windows/gazebo9_9.13.1
+      git clone https://github.com/ignitionrobotics/ign-cmake -b ignition-cmake2_2.2.0
+      git clone https://github.com/ignitionrobotics/ign-math -b ignition-math6_6.4.0
+      git clone https://github.com/ignitionrobotics/ign-msgs -b ignition-msgs5_5.3.0
+      git clone https://github.com/ignitionrobotics/ign-common -b ignition-common3_3.6.0
+      git clone https://github.com/ignitionrobotics/ign-fuel-tools -b ignition-fuel-tools4_4.1.0
+      git clone https://github.com/ignitionrobotics/ign-transport -b ignition-transport8_8.0.0
+      git clone https://github.com/osrf/sdformat -b sdformat9_9.2.0
+      git clone https://github.com/ms-iot/gazebo -b windows/gazebo11_11.0.0
     displayName: Get sources
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
@@ -37,8 +38,12 @@ jobs:
     displayName: ign-math
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
-      call "build.bat" ign-tools
-    displayName: ign-tools
+      call "build.bat" ign-common
+    displayName: ign-common
+    workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
+  - script: |
+      call "build.bat" ign-fuel-tools
+    displayName: ign-fuel-tools
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
       call "build.bat" ign-msgs

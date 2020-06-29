@@ -2,7 +2,8 @@ $projects = @(
     "ign-cmake",
     "ign-math",
     "ign-msgs",
-    "ign-tools",
+    "ign-common"
+    "ign-fuel-tools",
     "ign-transport",
     "sdformat",
     "gazebo"
