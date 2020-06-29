@@ -1,4 +1,7 @@
 $projects = @(
+    "libyaml",
+    "jsoncpp",
+    "libzip",
     "ign-cmake",
     "ign-math",
     "ign-msgs",
