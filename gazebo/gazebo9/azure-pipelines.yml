@@ -21,7 +21,7 @@ jobs:
   - script: |
       git clone https://github.com/yaml/libyaml -b 0.2.5
       git clone https://github.com/open-source-parsers/jsoncpp -b 1.9.3
-      git clone https://github.com/nih-at/libzip -b 1.7.1
+      git clone https://github.com/nih-at/libzip -b v1.7.1
       git clone https://github.com/ignitionrobotics/ign-cmake -b ignition-cmake2_2.2.0
       git clone https://github.com/ignitionrobotics/ign-math -b ignition-math6_6.4.0
       git clone https://github.com/ignitionrobotics/ign-msgs -b ignition-msgs5_5.3.0
