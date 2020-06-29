@@ -42,12 +42,12 @@ jobs:
     displayName: ign-common
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
-      call "build.bat" ign-fuel-tools
-    displayName: ign-fuel-tools
-    workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
-  - script: |
       call "build.bat" ign-msgs
     displayName: ign-msgs
+    workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
+  - script: |
+      call "build.bat" ign-fuel-tools
+    displayName: ign-fuel-tools
     workingDirectory: $(GAZEBO_BUILD_WORKING_DIRECTORY)
   - script: |
       call "build.bat" ign-transport
