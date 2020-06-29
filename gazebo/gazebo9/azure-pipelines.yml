@@ -16,7 +16,7 @@ jobs:
   - script: |
       choco sources add -n=roswin -s https://roswin.azurewebsites.net/api/v2/ --priority 1
       choco upgrade 7zip
-      choco upgrade pkg-config boost freeimage protobuf qt5-sdk dlfcn-win32 libcurl ogre zeromq cppzmq tbb qwt
+      choco upgrade pkg-config boost freeimage protobuf qt5-sdk dlfcn-win32 libcurl ogre zeromq cppzmq tbb qwt tinyxml2
     displayName: Install system dependencies
   - script: |
       git clone https://github.com/ignitionrobotics/ign-cmake -b ignition-cmake2_2.2.0
