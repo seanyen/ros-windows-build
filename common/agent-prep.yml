@@ -1,6 +1,7 @@
 steps:
 - powershell: |
     Get-WindowsOptionalFeature -Online -FeatureName *Data*
+    Get-WindowsFeature
     Get-DedupVolume -Volume "C:"
   displayName: 'Collect agent runtime information'
 
