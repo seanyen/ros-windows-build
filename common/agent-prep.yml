@@ -1,4 +1,9 @@
 steps:
+- script: |
+    mkdir c:\catkin_ws\src
+    dir /a /s c:\catkin_ws
+  displayName: 'Collect agent runtime information'
+
 - powershell: |
     Get-WindowsOptionalFeature -Online -FeatureName *Data*
     Get-WindowsFeature
