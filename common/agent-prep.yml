@@ -1,4 +1,8 @@
 steps:
+- powershell: |
+    Get-DedupVolume -Volume "C:"
+  displayName: 'Collect agent runtime information'
+
 - script: |
     wmic cpu get *
     wmic memorychip get *
