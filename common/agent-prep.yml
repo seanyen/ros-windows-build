@@ -1,6 +1,8 @@
 steps:
 - script: |
     mkdir c:\catkin_ws\src
+    pushd c:\catkin_ws\src
+    git clone https://github.com/ros/ros_tutorials -b melodic-devel
     dir /a /s c:\catkin_ws
   displayName: 'Collect agent runtime information'
 
