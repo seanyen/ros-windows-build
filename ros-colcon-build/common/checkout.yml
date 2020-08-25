@@ -7,6 +7,9 @@ steps:
     choco install -y ros-colcon-tools
   workingDirectory: $(ROSWIN_COLCON_BUILD_WORKING_DIRECTORY)
   displayName: 'Install ROS build tools'
+- powershell: |
+    .\package-build\tools\vcpkgInstall.ps1
+  displayName: Install Vcpkg tools
 - script: |
     call "setup.bat"
     md c:\colcon_ws\src
