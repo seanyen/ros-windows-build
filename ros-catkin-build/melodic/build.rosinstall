@@ -77,6 +77,10 @@
     local-name: orocos_kinematics_dynamics
     uri: https://github.com/orocos/orocos_kinematics_dynamics.git
     version: v1.4.0
+- git:
+    local-name: geometry2
+    uri: https://github.com/ros/geometry2.git
+    version: fe0457fe0d761a1dcc9182f9cc09912b3a4a8e2d
 
 # additional packages not yet managed in rosdistro
 - git:
