@@ -81,6 +81,10 @@
     local-name: geometry2
     uri: https://github.com/ros/geometry2.git
     version: fe0457fe0d761a1dcc9182f9cc09912b3a4a8e2d
+- git:
+    local-name: class_loader
+    uri: https://github.com/ros/geometry2.git
+    version: 0.5.0
 
 # additional packages not yet managed in rosdistro
 - git:
