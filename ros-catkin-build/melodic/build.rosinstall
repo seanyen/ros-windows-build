@@ -40,7 +40,7 @@
 - git:
     local-name: moveit
     uri: https://github.com/ms-iot/moveit.git
-    version: windows_fix_melodic
+    version: windows/1.0.3
 - git:
     local-name: robotiq
     uri: https://github.com/ms-iot/robotiq
