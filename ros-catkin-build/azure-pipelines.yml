@@ -64,7 +64,7 @@ jobs:
     VCPKG_ROOT: 'c:\opt\vcpkg'
     skipComponentGovernanceDetection: true
   steps:
-  - template: ..\common\agent-prep.yml
+  #- template: ..\common\agent-prep.yml
   - template: common\checkout.yml
   - template: common\build.yml
   - template: common\symbols.yml
